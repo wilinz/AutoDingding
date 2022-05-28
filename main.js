@@ -31,9 +31,9 @@ function openDingDing() {
     text("百色学院疫情防控健康填报-学生版").findOne()
 
     for (let i = 0; i < 4; i++) {
-        swipe(10, 1500, 10, 0, 20)
+        swipe(10, 1500, 10, 0, 100)
     }
-    sleep(100)
+    sleep(400)
     let viewList = text("请上传当日的通信行程卡截图").findOne()
         .parent().children()
 
@@ -57,9 +57,9 @@ function openDingDing() {
         text("我知道了").findOne().click()
     }
     for (let i = 0; i < 3; i++) {
-        swipe(10, 1500, 10, 0, 30)
+        swipe(10, 1500, 10, 0, 100)
     }
-    sleep(100)
+    sleep(300)
     text("提交").findOne().click()
     toast("完成")
 }
